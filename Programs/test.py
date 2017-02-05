@@ -1,18 +1,10 @@
-s = input()
-a = []
-b = []
-temp = []
+import itertools
+count = total = 0
+N = 7
+for pair in itertools.combinations([i for i in range(1,N)],2):
+    total += 1
+for pair in itertools.combinations([i for i in range(1,N)],2):
+    if(pair[1] ^ pair[0]) > 6:
+        count += 1
 
-for i in range(0,10):
-    a.append(i)
-    b.append(0)
-
-print(a)
-print(b)
-
-hash = {k:v for k,v in zip(a,b)}
-
-for i in s:
-    temp.append(i)
-
-print(temp)
+print(total - count)
