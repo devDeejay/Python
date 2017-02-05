@@ -9,6 +9,8 @@ while(num!=0):
     num = q
 
 binary.reverse()
+print(*binary)
+
 length = len(binary)
 
 for i in range (0,length-1):

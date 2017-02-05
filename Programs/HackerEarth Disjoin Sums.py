@@ -9,7 +9,6 @@ mainSet.sort()
 for i in range(0,len(mainSet)):
     nums = int(mainSet[i])
     if i%2 == 0:
-        if nums in a:
          a.append(nums)
 
     elif i%2 != 0:
